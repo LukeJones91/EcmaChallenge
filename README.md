@@ -1,6 +1,6 @@
 # EcmaChallenge
 
-A series of challenges in ECMA Script 2015 for [@sumanita](https://github.com/sumanita).
+A series of challenges in ECMA Script 2015 for [@LukeJones91](https://github.com/lukejones91).
 
 ## 1. Arrays
 
