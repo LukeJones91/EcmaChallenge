@@ -1,7 +1,14 @@
 module.exports = {
-	squares: squares
+    squares: squares
 }
 
 function squares(input) {
-	//Code here
+    //Code here
+    var output = [];
+    input.forEach(function (value, i) {
+        output[i] = value * value;
+    })
+    return output;
 }
+
+
