@@ -2,7 +2,7 @@
 
 A series of challenges in ECMA Script 2015 for [@LukeJones91](https://github.com/lukejones91).
 
-## 1. Arrays
+## 1. Arrays (squares)
 
 An initial familiarisation challenge to build up knowledge of the Git and unit-testing approach.
 
@@ -37,6 +37,25 @@ When you are done, use the npm test command:
 `npm test`
 
 This will let you know if your code passes or if it needs more work.
+
+### 1.2 Arrays (sum)
+
+As a second arrays exercise, you need to write a function that takes an array as input and returns the sum of all the values of the array.
+
+1. When passed an array of integers, the function will return the sum of the values
+2. When passed an array of any other value, the function will throw an error
+3. When passed an object that is not an array, the function will throw an error
+4. The function will work correctly with negative values
+
+Examples:
+
+```
+[1, 2, 3] -> 6
+[] -> []
+"not an array" -> <<throws an Error()>>
+[-5, -5] -> -10
+["invalid", "array"] -> <<thows an Error()>>
+```
 
 ## 2. Recursion
 

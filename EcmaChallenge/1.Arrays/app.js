@@ -1,5 +1,6 @@
 module.exports = {
-    squares: squares
+    squares: squares,
+    sums: sums
 }
 
 function squares(input) {
@@ -12,3 +13,6 @@ function squares(input) {
 }
 
 
+function sums(input) {
+    //Code here
+}

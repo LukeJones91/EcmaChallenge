@@ -76,4 +76,54 @@ describe("1_array", function(){
 			assert.throws(checkForError, Error);
 		});
 	});
+
+	describe("sums", function () {
+	    it("should work for a regular array", function () {
+            assert.equal(one_array.sums([1,2,3,4,5]), 15);
+	    })
+
+	    it("should error when passed an object that is not an array", function () {
+	        function throwError() {
+                one_array.sums("not an array")
+	        }
+
+            assert.throws(throwError, Error)
+	    })
+
+	    it("should error when passed an invalid array", function () {
+	        function throwError() {
+	            one_array.sums(["an", "invalid", "array"])
+	        }
+            
+            assert.throws(throwError, Error)
+	    })
+
+	    it("should work without side-effects", function () {
+            var input = [10, 11, 12]
+            var sum = 33
+
+            assert.equal(one_array.sums(input), sum);
+            assert.deepEqual(input, [10, 11, 12])
+	    })
+
+	    it("should work with negative values", function () {
+	        assert.equal(one_array.sums([-5, -4, -3, -2, -1]), -15);
+	    })
+
+	    it("should work with an empty array", function () {
+            assert.equal(one_array.sums([]), 0)
+	    })
+
+	    it("should work for a large array", function () {
+            var input = []
+            var sum = 0
+
+	        for (var i = 0; i < 10000; i++) {
+	            input[i] = Math.ceil(Math.random() * 100)
+                sum += input[i]
+	        }
+
+            assert.equal(one_array.sums(input), sum)
+	    })
+	})
 });
