@@ -2,7 +2,9 @@
 
 A series of challenges in ECMA Script 2015 for [@LukeJones91](https://github.com/lukejones91).
 
-## 1. Arrays (squares)
+## 1. Arrays
+
+### 1.1 Squares
 
 An initial familiarisation challenge to build up knowledge of the Git and unit-testing approach.
 
@@ -38,7 +40,7 @@ When you are done, use the npm test command:
 
 This will let you know if your code passes or if it needs more work.
 
-### 1.2 Arrays (sum)
+### 1.2 Sum
 
 As a second arrays exercise, you need to write a function that takes an array as input and returns the sum of all the values of the array.
 
@@ -58,6 +60,33 @@ Examples:
 ```
 
 ## 2. Recursion
+
+A couple of popular recursive-style problems
+
+### 2.1 Factorial
+
+Write a function that takes a number and computes the factorial of that number.
+
+For example:
+
+```
+factorial(5) = 1 * 2 * 3 * 4 * 5 = 120
+    ...
+factorial(3) = 1 * 2 * 3 = 6
+factorial(2) = 1 * 2 = 2
+```
+
+### 2.2 Fibonacci
+
+Write a function that takes a number and computes the value of the fibonacci sequence at that point.
+
+n      | 1 | 2 | 3 | 4 | 5 | 6
+------------------------------
+fib(n) | 1 | 1 | 2 | 3 | 5 | 8
+
+Where the first two terms of the fibonacci sequence are `1 and 1`, the nth value will be `fib(n) = fib(n - 1) + fib(n - 2)`.
+
+### 2.3 Binary Tree
 
 A warm-up exercise to invert a binary tree. A classic of interview-type questions.
 

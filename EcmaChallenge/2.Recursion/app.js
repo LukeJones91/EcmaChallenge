@@ -1,6 +1,8 @@
 module.exports = {
 	Node: Node,
-	invertBinaryTree: invertBinaryTree
+	invertBinaryTree: invertBinaryTree,
+    fibonacci: fibs,
+    factorial: fact
 }
 
 function Node(value) {
@@ -46,4 +48,12 @@ Node.prototype.toString = function() {
 
 function invertBinaryTree(tree) {
 	//Code
+}
+
+function fact(num) {
+    //Code
+}
+
+function fibs(num) {
+    //Code
 }
